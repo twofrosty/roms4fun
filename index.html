@@ -1,23 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <titleROMS4FUN.COM</title>
+  <title>ROMS4FUN.COM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff00;
+      font-family: 'Share Tech Mono', monospace;
+      margin: 0;
+      padding: 40px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* CRT Scanline Overlay */
+    body::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 0, 0.05),
+        rgba(0, 255, 0, 0.05) 2px,
+        transparent 2px,
+        transparent 4px
+      );
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #00ff00;
+      width: 0;
+      animation: typing 3s steps(20, end) forwards, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 15ch; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #00ff00;
+      border-bottom: 1px dashed #00ff00;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: '> ';
+      padding-left: 20px;
+    }
+
+    ul a {
+      color: #00ff00;
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    ul a:hover {
+      text-shadow: 0 0 5px #00ff00;
+    }
+
+    img {
+      max-width: 150px;
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #00ff00;
+    }
+
+    .content {
+      margin-top: 30px;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
-  <h1>ROMS4FUN</h1>
-<img src="photo.jpg" alt="My photo">
+  <h1>ROMS4FUN_</h1>
 
-  <ul>
-    <li><a href="https://drive.google.com/uc?export=download&id=1z7WoOa5PhbDLg2HxdE2ui5rvpFjft-30" target="_blank">Super Smash Bros Brawl</a></li>
-    <li><a href="https://drive.google.com/uc?export=download&id=1ybb_BvW8vhgRl4vFQ92h1yBnNdTz5g3o" target="_blank">New Super Mario Bros Wii</a></li>
-    <li><a href="https://drive.google.com/uc?export=download&id=1_kQnbQrZ2-Y4oymQvfHf_fQAMvDxl07O" target="_blank">Mario Kart Wii</a></li>
-    <li><a href="https://drive.google.com/uc?export=download&id=12GkmMZzPRCVj-gvk-fIQYVB_CZhoL8Ho" target="_blank">Mario Party 8</a></li>
+  <div class="content">
+    <img src="photo.jpg" alt="My photo">
 
+    <h2>NINTENDO WII</h2>
+    <ul>
+      <li><a href="https://drive.google.com/uc?export=download&id=1z7WoOa5PhbDLg2HxdE2ui5rvpFjft-30" target="_blank">Super Smash Bros Brawl</a></li>
+      <li><a href="https://drive.google.com/uc?export=download&id=1ybb_BvW8vhgRl4vFQ92h1yBnNdTz5g3o" target="_blank">New Super Mario Bros Wii</a></li>
+      <li><a href="https://drive.google.com/uc?export=download&id=1_kQnbQrZ2-Y4oymQvfHf_fQAMvDxl07O" target="_blank">Mario Kart Wii</a></li>
+      <li><a href="https://drive.google.com/uc?export=download&id=12GkmMZzPRCVj-gvk-fIQYVB_CZhoL8Ho" target="_blank">Mario Party 8</a></li>
+    </ul>
 
-  </ul>
+    <h2>EMULATORS</h2>
+    <ul>
+      <li><a href="https://drive.google.com/uc?export=download&id=1g-vwJyEdrufY7cv-ueci8Jg7JYarjqR2" target="_blank">Switch Emulator (Yuzu)</a></li>
+    </ul>
+  </div>
 </body>
 </html>
-
 
 
 
