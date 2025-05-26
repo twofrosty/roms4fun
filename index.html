@@ -10,7 +10,7 @@
       font-family: 'Share Tech Mono', monospace;
       margin: 0;
       padding: 40px;
-      overflow: hidden;
+      overflow-y: auto; /* Allow scrolling */
       position: relative;
     }
 
@@ -83,7 +83,7 @@
     .content {
       margin-top: 30px;
       position: relative;
-      z-index: 1;
+      z-index: 3; /* Raised above overlay */
     }
   </style>
 </head>
@@ -111,6 +111,5 @@
   </div>
 </body>
 </html>
-
 
 
